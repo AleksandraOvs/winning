@@ -21,7 +21,7 @@
                         }
                         ?>
                         </div>
-                    <?php } ?>
+                    <?php //} ?>
 
 
                 <div class="products__sizes">

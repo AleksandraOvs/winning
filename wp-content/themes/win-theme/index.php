@@ -225,17 +225,11 @@
                                           </div><!-- ./end of js-slider-main-1 -->
                                         <?php } ?>
                                         </div> <!--./end of products__sliders -->
-
+                                
                                        <div class="products__content">    
                                     <?php get_template_part('products-parts/main-content');?>
-                                </div>
-
-                                    
-                                   
-
-                                
-
-                                </div><!-- ./end of products__item -->  
+                                      </div>
+                            </div><!-- ./end of products__item -->  
                         </div> <!-- ./end of products__item-wrap -->
 
                     
@@ -244,9 +238,3 @@
 </div>
 </section>
 <?php get_footer(); ?>
-
-       
-       
-      
-
-<?php get_footer() ?>
