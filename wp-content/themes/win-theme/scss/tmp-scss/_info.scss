@@ -1,0 +1,67 @@
+.info {
+  overflow: hidden;
+  padding-bottom: 20px !important;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include adpt ($stab-r) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    flex: 1;
+    padding: 20px 5px;
+    //border: 1px solid $accent;
+    box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+    @include adpt ($desm-r) {
+      font-size: 25px;
+
+    }
+
+    @include adpt ($bmob-r) {
+      font-size: 20px;
+      line-height: 1.45;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: #D6D4DD;
+      height: 50px;
+      width: 40000px;
+      left: -5000px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include adpt ($stab-r) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+    margin: 0 auto 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.delivery {
+  &__inner {
+    max-width: 845px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    @include adpt ($bmob-r) {
+      align-items: flex-start;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+
+      @include adpt ($tab-r) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-right: 35px;
+    display: none;
+
+    @include adpt ($tab-r) {
+      width: 60px;
+      height: 60px;
+      margin-right: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}

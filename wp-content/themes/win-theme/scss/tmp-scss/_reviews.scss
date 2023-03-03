@@ -1,0 +1,143 @@
+.reviews {
+  &__slide-wrap {
+    padding: 0 20px;
+
+    @include adpt ($tab-r) {
+      padding: 0 10px;
+    }
+    @include adpt ($bmob-r) {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  &__slide {
+    padding: 25px;
+    background-color: $blue;
+    background: linear-gradient(180deg, #63ABF3 0%, #0043C6 100%);
+    color: $white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.25);
+
+    @include adpt ($tab-r) {
+      padding: 20px;
+    }
+  }
+
+  &__slide-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__avatar {
+    object-fit: contain;
+    margin-right: 25px;
+
+    @include adpt ($tab-r) {
+      margin-right: 15px;
+    }
+
+    @include adpt ($bmob-r) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__name {
+    font-size: 30px;
+    line-height: 1;
+
+    @include adpt ($tab-r) {
+      font-size: 26px;
+    }
+
+    @include adpt ($bmob-r) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    line-height: 1.25;
+    margin-bottom: 30px;
+
+    @include adpt ($tab-r) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__stars {
+    margin-bottom: 25px;
+    object-fit: contain;
+
+    @include adpt ($tab-r) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__date {
+    line-height: 1.25;
+  }
+
+  & .slick-list {
+    margin: 0 -20px;
+
+    @include adpt ($tab-r) {
+      margin: 0 -10px;
+    }
+  }
+
+  & .slick-slide {
+    height: auto;
+
+    @include adpt ($bmob-r) {
+      height: 100%;
+    }
+  }
+
+  & .slick-track {
+    display: flex;
+    align-items: stretch;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include adpt ($bmob-r) {
+      display: block;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  & .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 0;
+
+    & li {
+      &.slick-active {
+        & button {
+          background-color: $accent;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    & button {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $blue;
+      transition: background-color 0.3s;
+    }
+  }
+
+}

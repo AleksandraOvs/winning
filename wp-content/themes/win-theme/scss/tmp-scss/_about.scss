@@ -1,0 +1,129 @@
+.about {
+  padding: 100px 0;
+  background-color: $blue;
+  background: linear-gradient(263.75deg, #63ABF3 3%, #3600D3 101.75%);
+  color: $white;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  @include adpt ($tab-r) {
+    padding-bottom: 120px;
+  }
+  @include adpt ($bmob-r) {
+    background: linear-gradient(154.75deg, #3600D3 0%, #63ABF3 73.62%);
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+    width: 230px;
+    height: 275px;
+    pointer-events: none;
+    background-image: url('../images/about/dec2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include adpt ($tab-r) {
+      right: auto;
+      left: 0;
+      background-image: url('../images/about/dec4.png');
+      width: 130px;
+      height: 185px;
+      bottom: -80px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 454px;
+    pointer-events: none;
+    background-image: url('../images/about/dec1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include adpt ($big-r) {
+      width: 400px;
+      height: 382px;
+    }
+
+    @include adpt ($tab-r) {
+      background-image: url('../images/about/dec3.png');
+      top: -46px;
+      left: auto;
+      width: 168px;
+      height: 259px;
+      right: 0;
+    }
+
+    @include adpt ($bmob-r) {
+      width: 140px;
+      height: 240px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    margin-left: 20%;
+
+    @include adpt ($big-r) {
+      margin-left: 420px;
+    }
+
+    @include adpt ($tab-r) {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    @include adpt ($big-r) {
+      font-size: 65px;
+    }
+
+    @include adpt ($tab-r) {
+      font-size: 50px;
+      margin-bottom: 25px;
+    }
+
+    @include adpt ($bmob-r) {
+      font-size: 35px;
+    }
+  }
+
+  &__text {
+    max-width: 725px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.33;
+    margin-left: 40px;
+
+    @include adpt ($big-r) {
+      font-size: 24px;
+    }
+
+    @include adpt ($tab-r) {
+      font-size: 20px;
+      margin-left: 0;
+    }
+
+    @include adpt ($bmob-r) {
+     // font-size: 20px;
+      max-width: 320px;
+    }
+  }
+}

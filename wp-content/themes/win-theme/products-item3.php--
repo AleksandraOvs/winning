@@ -1,0 +1,9 @@
+<div class="products__item-wrap">
+<?php
+$prod_name = get_term_field('name', '6');
+if (is_wp_error($prod_name)){
+echo 'error';
+} else {
+echo $prod_name;} ?>
+</div><!-- ./ end of products__item-wrap -->
+

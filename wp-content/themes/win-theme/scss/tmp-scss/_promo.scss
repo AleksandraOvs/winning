@@ -1,0 +1,228 @@
+.promo {
+  padding-top: 20px;
+  padding-bottom: 180px;
+  overflow: hidden;
+
+  @include adpt ($stab-r) {
+    padding-bottom: 130px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+
+    @include adpt ($stab-r) {
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+  }
+  &__img{
+    object-fit: contain;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    @include adpt ($stab-r) {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    text-align: center;
+    margin-right: 40px;
+
+    @include adpt ($stab-r) {
+      margin-right: 0;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.04;
+    margin-bottom: 20px;
+
+    @include adpt ($big-r) {
+      font-size: 42px;
+    }
+
+    @include adpt ($tab-r) {
+      font-size: 36px;
+    }
+
+    @include adpt ($stab-r) {
+      font-size: 32px;
+    }
+
+    @include adpt ($bmob-r) {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__video-link {
+    display: block;
+
+    @include adpt ($stab-r) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__video-wrap {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+
+    @include adpt ($big-r) {
+      & iframe {
+        height: 360px;
+      }
+    }
+
+    @include adpt ($stab-r) {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 50px;
+
+    @include adpt ($big-r) {
+      font-size: 26px;
+    }
+
+    @include adpt ($tab-r) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    @include adpt ($stab-r) {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__timer {
+    position: relative;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 620px;
+
+    @include adpt ($tab-r) {
+      margin-bottom: 30px;
+    }
+
+    @include adpt ($stab-r) {
+      margin-bottom: 0;
+      padding: 11px 0;
+      font-size: 30px;
+    }
+
+    @include adpt ($bmob-r) {
+      font-size: 28px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1000px;
+      width: 4000px;
+      background-color: $blue;
+      background: linear-gradient(90.89deg, #63ABF3 1.3%, #3600D3 100%);
+      height: 100%;
+      box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.15);
+      z-index: 0;
+    }
+
+    & span {
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+    }
+  }
+
+  &__timer-dec {
+    font-size: 70px;
+    line-height: 30px;
+    margin: -20px 4px 0;
+
+    @include adpt ($stab-r) {
+      font-size: 60px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 260px;
+
+    @include adpt ($stab-r) {
+      display: none;
+    }
+
+    &_mob {
+      display: none;
+
+      @include adpt ($stab-r) {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__timer-wrap {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+
+
+    &:first-child {
+      & span {
+        &::after {
+          content: " ч";
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      & span {
+        &::after {
+          content: " м";
+        }
+      }
+    }
+
+    &:last-child {
+      & span {
+        &::after {
+          content: " с";
+        }
+      }
+    }
+  }
+
+  &__timer-item {
+    background-color: #0D0031;
+    padding: 20px 30px;
+    border-radius: 70px;
+
+    @include adpt ($bmob-r) {
+      padding: 11px 5px;
+    }
+  }
+}

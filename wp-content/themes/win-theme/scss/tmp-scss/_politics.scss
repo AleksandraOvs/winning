@@ -1,0 +1,23 @@
+.politics {
+  &__inner {
+    padding: 70px 20px;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  & ul:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  & h2:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  & h3:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
