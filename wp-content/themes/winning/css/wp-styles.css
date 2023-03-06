@@ -1,0 +1,13 @@
+.products__slider-main__container {
+    display: flex;
+    align-items:center;
+}
+
+.products__slider-main__container__content{
+    margin-left: 20px;
+}
+
+.products__slider-wrap__flex{
+    display: flex;
+    align-items:center;
+}

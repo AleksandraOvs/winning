@@ -175,7 +175,7 @@
   </section>
   
   <section class="info section _pb-0">
-  <?php if($adv2_items = carbon_get_post_meta(get_the_ID(), 'advantages2' ) ) {?> 
+  <?php if($adv2_items = carbon_get_post_meta(get_the_ID(), 'advantages2' ) ) { ?> 
     <div class="container">
       <div class="info__inner">
       <?php 
@@ -185,7 +185,7 @@
           <?php $adv2_img_url = wp_get_attachment_image_url($adv2_item['crb_adv2_img'], 'full'); ?>
           <img class="info__img" src="<?php echo $adv2_img_url ?>" alt="info">
           <div class="info__text">
-          <?php echo $adv2_item['crb_adv2_text'] ?>
+          <?php echo $adv2_item['crb_adv2_text']; ?>
           </div>
           </div>
        <?php }?> 
@@ -194,41 +194,37 @@
     <?php } ?>
   </section>
 
-  <section class="section products" id="products">
-    <div class="container">
-      <div class="products__title title">
-        Товары
+<section class="section products" id="products">
+        <div class="container">
+          <div class="products__title title">Товары</div>
+        </div>
+        <div class="products__slider-wrap">
+         <div class="container">
+          <?php
+            $terms = get_terms( 'categories',[
+                'orderby' => 'date',
+                'order'         => 'DESC'
+            ] );
+                $item=1;
+                //$item_left=1;
+            $i_m = 1;
+            if( $terms && ! is_wp_error( $terms ) ){ ?>
+            <div class="products__slider js-products-slider">
+            <?php foreach( $terms as $term ){ ?>
+              <div class="products__item-wrap">
+                <div class="products__item">
+                  <?php get_template_part('products-sliders');?>
+                  <div class="products__content">
+                    <div class="products__name"><?php echo $term->name;?></div>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+            </div>
+          <?php } ?>
+         </div>
       </div>
-    </div>
-
-    <div class="products__slider-wrap">
-      <div class="container">
-        <div class="products__slider js-products-slider">
-          
-          <?php
-	          $args = array( 'post_type'=> 'products', 'tax_query' => array('taxonomy'=>'products_types'));
-		          $sposts = get_posts($args);
-		              get_template_part('products', 'item1');
-	        ?>
-
-          <?php
-	          $args = array( 'post_type'=> 'products', 'tax_query' => array('taxonomy'=>'products_types'));
-		          $sposts = get_posts($args);
-		              get_template_part('products', 'item2');
-	        ?>
-
-          <?php
-	          $args = array( 'post_type'=> 'products', 'tax_query' => array('taxonomy'=>'products_types'));
-		          $sposts = get_posts($args);
-		              get_template_part('products', 'item3');
-	        ?>
-
-        </div><!-- ./end of products__slider js-products-slider -->
-      </div><!-- ./end of container -->
-    </div><!-- ./end of products__slider-wrap -->
+</section>
 
 
-
-  </section>
-
-<?php get_footer() ?>
+<?php get_footer(); ?>

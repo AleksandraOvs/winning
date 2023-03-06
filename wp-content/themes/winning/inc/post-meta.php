@@ -52,16 +52,37 @@ Container::make('post_meta', 'Контент для страницы')
         ))
     ));
     
-    Container::make('post_meta', 'Добавить товар')
-           ->show_on_post_type('products')
-           ->add_fields (array (
-            Field::make( 'color', 'crb_products_color', 'Выбрать цвет' )
-            // ->add_options( array(
-            //     'left' => 'Left',
-            //     'center' => 'Center',
-            //     'right' => 'Right',
-            // ) )
-           ));
+
+
+    Container::make('post_meta', 'Контент для страницы')
+    ->show_on_post_type('products')
+    ->add_fields( array(
+        Field::make( 'text', 'crb_products_description', 'Описание товара' )
+    ));
+
+
+
+
+    // Container::make('post_meta', 'Добавить товар')
+    // ->add_fields( array(
+
+    // ))
+    //        ->show_on_post_type('products')
+           
+    //        // ->add_options( array(
+    //        //     'left' => 'Left',
+    //        //     'center' => 'Center',
+    //        //     'right' => 'Right',
+    //        // ) )
+    //       ));
+    //     //    ->add_fields (array (
+    //     //     Field::make( 'color', 'crb_products_color', 'Выбрать цвет' )
+    //     //     // ->add_options( array(
+    //     //     //     'left' => 'Left',
+    //     //     //     'center' => 'Center',
+    //     //     //     'right' => 'Right',
+    //     //     // ) )
+    //     //    ));
     
     
         
