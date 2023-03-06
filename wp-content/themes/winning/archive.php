@@ -6,9 +6,7 @@
                 <div class="products__slider-wrap">
                     <?php
                 while ( have_posts() ) : the_post(); 
-                    //get_template_part();  
                     ?>
-                        
                             <?php echo the_post_thumbnail(); ?>
                         
                     <?php

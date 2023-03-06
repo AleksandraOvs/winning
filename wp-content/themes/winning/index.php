@@ -205,9 +205,6 @@
                 'orderby' => 'date',
                 'order'         => 'DESC'
             ] );
-                $item=1;
-                //$item_left=1;
-            $i_m = 1;
             if( $terms && ! is_wp_error( $terms ) ){ ?>
             <div class="products__slider js-products-slider">
             <?php foreach( $terms as $term ){ ?>
