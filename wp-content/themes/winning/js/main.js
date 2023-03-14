@@ -210,8 +210,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
-    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
+    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
+    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
     asNavFor: '.js-slider-left-1',
   });
 
@@ -236,8 +236,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
-    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
+    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
+    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
     asNavFor: '.js-slider-left-2'
   });
   $('.js-slider-left-2').slick({
@@ -261,8 +261,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
-    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
+    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
+    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
     asNavFor: '.js-slider-left-3'
   });
   $('.js-slider-left-3').slick({
@@ -285,8 +285,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
-    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="images/icon/arrow-prev-2.svg"></div>',
+    prevArrow: '<div class="slider__arrow slider__arrow_prev"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
+    nextArrow: '<div class="slider__arrow slider__arrow_next"><img class="slider__arrow-img" src="http://win03.beget.tech/wp-content/themes/winning/images/icon/arrow-prev-2.svg"></div>',
     asNavFor: '.js-slider-left-4'
   });
   $('.js-slider-left-4').slick({

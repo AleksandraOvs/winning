@@ -1,0 +1,132 @@
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE-LOG: 2023-03-13 09:42:23
+NOTICE: Do NOT post to public sites or forums 
+PACKAGE CREATION START
+********************************************************************************
+********************************************************************************
+VERSION:	4.5.8.1
+WORDPRESS:	6.1.1
+PHP INFO:	8.0.28 | SAPI: apache2handler
+SERVER:		Apache/2.4.51 (Unix) 
+ARCHITECTURE:	64-bit 
+CLIENT KICKOFF: off 
+PHP TIME LIMIT: [7200] not allowed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+RUN TYPE:	Manual
+MEMORY STACK:	12MB
+ARCHIVE ENGINE: Shell Zip
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP + CHUNKING (query size limit - 131072 )
+
+TABLES: total: 14 | filtered:0 | create:14
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 1
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:1] wp_usermeta NUM ROWS: 25
+INSERT ROWS TABLE[INDEX:2] wp_commentmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:3] wp_comments NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:4] wp_duplicator_pro_entities NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:5] wp_duplicator_pro_packages NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:6] wp_links NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:7] wp_options NUM ROWS: 202
+INSERT ROWS TABLE[INDEX:8] wp_postmeta NUM ROWS: 345
+INSERT ROWS TABLE[INDEX:9] wp_posts NUM ROWS: 69
+INSERT ROWS TABLE[INDEX:10] wp_termmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:11] wp_terms NUM ROWS: 13
+INSERT ROWS TABLE[INDEX:12] wp_term_relationships NUM ROWS: 43
+INSERT ROWS TABLE[INDEX:13] wp_term_taxonomy NUM ROWS: 13
+SQL FILE SIZE CHECK OK, SIZE: 1387715
+SQL CREATED: 20230313_winning_76dc156c49dccc326225_20230313094205_database.sql
+SQL FILE SIZE: 1.32MB
+SQL FILE TIME: 2023-03-13 09:42:25
+SQL RUNTIME: 2.234 sec.
+MEMORY STACK: 12MB
+
+********************************************************************************
+ARCHIVE  Type=ZIP Mode=Shell
+********************************************************************************
+ARCHIVE DIR:  /home/w/win03/win03.beget.tech/public_html
+ARCHIVE FILE: 20230313_winning_76dc156c49dccc326225_20230313094205_archive.zip
+FILTERS: *OFF*
+DIRS:  not set
+EXTS:  not set
+FILES:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	116MB
+STATS:	Dirs 856 | Files 5,235 | Total 6,091
+SHELL COMMAND: cd '/home/w/win03/win03.beget.tech/public_html' && zip -6 -rq '/home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro/tmp/20230313_winning_76dc156c49dccc326225_20230313094205_archive.zip' ./ -x .opcache**\* .opcache .tmb**\* .tmb wp\-content/ai1wm\-backups**\* wp\-content/ai1wm\-backups wp\-content/backups\-dup\-lite**\* wp\-content/backups\-dup\-lite wp\-content/backups\-dup\-pro/**\* wp\-content/backups\-dup\-pro/ wp\-content/backups\-dup\-pro/**\* wp\-content/backups\-dup\-pro/ wp\-content/backupwordpress**\* wp\-content/backupwordpress wp\-content/bps\-backup**\* wp\-content/bps\-backup wp\-content/cache**\* wp\-content/cache wp\-content/content/cache**\* wp\-content/content/cache wp\-content/contents/cache**\* wp\-content/contents/cache wp\-content/infinitewp/backups**\* wp\-content/infinitewp/backups wp\-content/managewp/backups**\* wp\-content/managewp/backups wp\-content/old\-cache**\* wp\-content/old\-cache wp\-content/plugins/all\-in\-one\-wp\-migration/storage**\* wp\-content/plugins/all\-in\-one\-wp\-migration/storage wp\-content/plugins/really\-simple\-captcha/tmp**\* wp\-content/plugins/really\-simple\-captcha/tmp wp\-content/plugins/wordfence/tmp**\* wp\-content/plugins/wordfence/tmp wp\-content/updraft**\* wp\-content/updraft wp\-content/uploads/aiowps_backups**\* wp\-content/uploads/aiowps_backups wp\-content/uploads/backup\-guard**\* wp\-content/uploads/backup\-guard wp\-content/uploads/backupbuddy_backups**\* wp\-content/uploads/backupbuddy_backups wp\-content/uploads/backupbuddy_temp**\* wp\-content/uploads/backupbuddy_temp wp\-content/uploads/ithemes\-security/backups**\* wp\-content/uploads/ithemes\-security/backups wp\-content/uploads/mainwp/backup**\* wp\-content/uploads/mainwp/backup wp\-content/uploads/pb_backupbuddy**\* wp\-content/uploads/pb_backupbuddy wp\-content/uploads/snapshots**\* wp\-content/uploads/snapshots wp\-content/uploads/sucuri**\* wp\-content/uploads/sucuri wp\-content/uploads/wp\-clone**\* wp\-content/uploads/wp\-clone wp\-content/uploads/wp_all_backup**\* wp\-content/uploads/wp_all_backup wp\-content/uploads/wpbackitup_backups**\* wp\-content/uploads/wpbackitup_backups wp\-content/wfcache**\* wp\-content/wfcache wp\-content/wishlist\-backup**\* wp\-content/wishlist\-backup wp\-content/wpvividbackups**\* wp\-content/wpvividbackups wp\-snapshots**\* wp\-snapshots "../../../../../../.DS_Store" ".htaccess" ".user.ini" "php.ini" "web.config" "wp-config.php" "../../../../../../dbcache" "../../../../../../debug_log" "../../../../../../error_log" "../../../../../../objectcache" "../../../../../../pgcache" "../../../../../../ws_ftp.log" wp-content/backups-dup-pro/**\*  2>&1
+COMPRESSED SIZE: 58.77MB
+ARCHIVE RUNTIME: 3.419 sec.
+MEMORY STACK: 14MB
+SHELL COMMAND ADD EXTRAS: cd '/home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro/tmp/extras/' && zip -6 -g -rq '/home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro/tmp/20230313_winning_76dc156c49dccc326225_20230313094205_archive.zip' ./* ./.[^.]*
+CHECK FILES Array
+(
+    [0] => dup-installer/api/class.api.php
+    [1] => dup-installer/assets/index.php
+    [2] => dup-installer/classes/index.php
+    [3] => dup-installer/ctrls/index.php
+    [4] => dup-installer/src/Utils/Autoloader.php
+    [5] => dup-installer/templates/default/page-help.php
+    [6] => dup-installer/main.installer.php
+    [7] => 20230313_winning_76dc156c49dccc326225_20230313094205_installer-backup.php
+    [8] => dup-installer/index.php
+    [9] => dup-installer/libs/Snap/index.php
+    [10] => dup-installer/assets/js/duplicator-tooltip.js
+    [11] => dup-installer/assets/js/tippy/index.php
+    [12] => dup-installer/dup-archive__76dc156-13094205.txt
+    [13] => dup-installer/dup-scan__76dc156-13094205.json
+    [14] => dup-installer/dup-scanned-files__76dc156-13094205.txt
+    [15] => dup-installer/dup-scanned-dirs__76dc156-13094205.txt
+    [16] => dup-installer/dup-manual-extract__76dc156-13094205
+    [17] => dup-installer/dup-database__76dc156-13094205.sql
+)
+
+Executing extra count string unzip -Z1 '/home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro/tmp/20230313_winning_76dc156c49dccc326225_20230313094205_archive.zip' | grep '^\(dup-installer/api/class.api.php\|dup-installer/assets/index.php\|dup-installer/classes/index.php\|dup-installer/ctrls/index.php\|dup-installer/src/Utils/Autoloader.php\|dup-installer/templates/default/page-help.php\|dup-installer/main.installer.php\|20230313_winning_76dc156c49dccc326225_20230313094205_installer-backup.php\|dup-installer/index.php\|dup-installer/libs/Snap/index.php\|dup-installer/assets/js/duplicator-tooltip.js\|dup-installer/assets/js/tippy/index.php\|dup-installer/dup-archive__76dc156-13094205.txt\|dup-installer/dup-scan__76dc156-13094205.json\|dup-installer/dup-scanned-files__76dc156-13094205.txt\|dup-installer/dup-scanned-dirs__76dc156-13094205.txt\|dup-installer/dup-manual-extract__76dc156-13094205\|dup-installer/dup-database__76dc156-13094205.sql\)' | wc -l
+
+********************************************************************************
+STORAGE:
+********************************************************************************
+LOCAL: Default, /home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.32MB
+INSTALLER FILE: 113.63KB
+ARCHIVE FILE: 61.17MB 
+EXPECTED FILE/DIRECTORY COUNT: 6,091
+ACTUAL FILE/DIRECTORY COUNT: 6,092
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 6.702 sec.
+PEAK PHP MEMORY USED: 12MB
+DONE PROCESSING => 20230313_winning 2023-03-13 09:42:30
+
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+** LOCAL [Name: Default] [ID: -2] **
+SUCCESS: copied to default location: /home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+STORAGE PROCESSING COMPLETED
+MAX PACKAGES: 20
+OLD PACKAGES LIST Array
+(
+    [0] => /home/w/win03/win03.beget.tech/public_html/wp-content/backups-dup-pro/20230313_winning_76dc156c49dccc326225_20230313094205_archive.zip
+)
+
+
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE CREATION OR MANUAL STORAGE TRANSFER END: 2023-03-13 09:42:30
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+********************************************************************************
+

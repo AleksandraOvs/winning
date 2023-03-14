@@ -195,33 +195,173 @@
   </section>
 
 <section class="section products" id="products">
-        <div class="container">
-          <div class="products__title title">Товары</div>
-        </div>
-        <div class="products__slider-wrap">
-         <div class="container">
-          <?php
-            $terms = get_terms( 'categories',[
-                'orderby' => 'date',
-                'order'         => 'DESC'
-            ] );
-            if( $terms && ! is_wp_error( $terms ) ){ ?>
-            <div class="products__slider js-products-slider">
-            <?php foreach( $terms as $term ){ ?>
-              <div class="products__item-wrap">
-                <div class="products__item">
-                  <?php get_template_part('products-sliders');?>
-                  <div class="products__content">
-                    <div class="products__name"><?php echo $term->name;?></div>
-                  </div>
-                </div>
-              </div>
-            <?php } ?>
-            </div>
-          <?php } ?>
-         </div>
-      </div>
-</section>
+    <div class="container">
+      <div class="products__title title">Товары</div>
+    </div>
+    <div class="products__slider-wrap">
+      <div class="container">
+        <div class="products__slider js-products-slider">
 
+          <?php
+
+          $categories_arr = get_terms([
+            'taxonomy' => 'categories',
+            'hide_empty' => false,
+          ]);
+
+// print_r($categories_arr);
+
+// $photos = get_field('photos', 'categories_17', 'option');
+// print_r($photos);
+
+
+          ?>
+
+
+          <?php 
+
+          foreach ($categories_arr as $key => $term) {
+            // print_r($term);
+            $name = $term->name;
+            $description = $term->description; 
+            $term_id = $term->term_id;
+            $photos = get_field('photos', 'categories_'.$term_id, 'option');
+              // $colors = get_field('category_colors', 'categories_'.$term_id, 'option');
+            $razmeri = get_field('category_razmeri', 'categories_'.$term_id, 'option');
+
+              // print_r($photos);
+              // print_r($colors);
+              // print_r($razmeri);
+            ?>
+
+            <div class="products__item-wrap">
+
+              <div class="products__item">
+                <div class="products__sliders">
+                  <div class="products__slider-left js-slider-left-<?php echo $key + 1; ?>">
+
+                    <?php 
+
+                    foreach($photos as $key2 => $photo_data){
+                      ?>
+                      <div class="products__small-img-wrap">
+                        <img class="products__small-img" src="<?php echo $photo_data['photo']; ?>" alt="product">
+                      </div>
+                      <?php
+                    }
+
+                    ?>
+
+                  </div>
+
+                  <div class="products__slider-main js-slider-main-<?php echo $key + 1; ?>">
+
+                    <?php 
+
+                    foreach($photos as $key2 => $photo_data){
+                      ?>
+                      <div class="products__big-img-wrap">
+                        <img class="products__big-img" src="<?php echo $photo_data['photo']; ?>" alt="product">
+                      </div>
+                      <?php
+                    }
+
+                    ?>
+
+                  </div>
+
+                </div>
+
+
+
+
+                <div class="products__content">
+                  <div class="products__name">
+                    <?php echo $name; ?>
+                  </div>
+                  <div class="products__discr">
+                    <?php echo $description; ?>
+                  </div>
+                  <div class="products__colors">
+                    <?php 
+                    foreach($photos as $key2 => $photo_data){
+                      ?>
+
+                      <div class="input input-colors">
+                        <input class="input-colors__input" type="radio" name="pr-c-<?php echo $key + 1; ?>" id="pr-c-<?php echo $key + 1; ?>-<?php echo $key2; ?>" value="<?php echo $key2; ?>">
+                        <label class="input-colors__label" for="pr-c-<?php echo $key + 1; ?>-<?php echo $key2; ?>" style="background-color: <?php echo $photo_data['color']; ?>;"></label>
+                      </div>
+
+                      <?php
+                    }
+                    ?>
+                  </div>
+                  <div class="products__sizes">
+
+                    <?php 
+
+                    foreach($razmeri as $key2 => $razmer){
+                      ?>
+
+                      <div class="input input-sizes">
+                        <input class="input-sizes__input" type="radio" name="pr-s-<?php echo $key + 1; ?>" id="pr-s-<?php echo $key + 1; ?>-<?php echo $key2 + 1; ?>">
+                        <label class="input-sizes__label" for="pr-s-<?php echo $key + 1; ?>-<?php echo $key2 + 1; ?>">
+                          <?php echo $razmer['razmer']; ?>
+                        </label>
+                      </div>
+
+                      <?php
+                    }
+
+                    ?>
+                    
+                  </div>
+                  <a class="products__link btn popup--link" href="#popup">
+                    оформить заказ
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <?php
+
+          }
+
+          ?>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="products__slider-rule">
+      <div class="products__slider-arrow">
+        <img class="products__slider-arrow-img products__slider-arrow_prev slick-arrow" src="<?php echo get_template_directory_uri();?>/images/icon/arrow-prev.svg" width="13" height="28" alt="arrow" aria-disabled="false" style="">
+      </div>
+      <div class="products__slider-dots">
+        <ul class="slick-dots" role="tablist" style="">
+          <li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 4" tabindex="-1">1</button></li>
+          <li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 4" tabindex="0" aria-selected="true">2</button></li>
+          <li role="presentation"><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 4" tabindex="-1">3</button></li>
+          <li role="presentation"><button type="button" role="tab" id="slick-slide-control13" aria-controls="slick-slide13" aria-label="4 of 4" tabindex="-1">4</button></li>
+        </ul>
+      </div>
+      <div class="products__slider-arrow products__slider-arrow_next slick-arrow" aria-disabled="false" style="">
+        <img class="products__slider-arrow-img" src="<?php echo get_template_directory_uri();?>/images/icon/arrow-prev.svg" width="13" height="28" alt="arrow">
+      </div>
+    </div>
+  </section>
+
+  <style type="text/css">
+
+    .products__slider-dots .slick-dots:first-child {
+      display: none;
+    }
+
+
+
+
+  </style>
 
 <?php get_footer(); ?>

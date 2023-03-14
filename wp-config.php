@@ -20,13 +20,13 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'win_db' );
+define( 'DB_NAME', 'win03_db' );
 
 /** Имя пользователя базы данных */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'win03_db' );
 
 /** Пароль к базе данных */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'l*AiE8no' );
 
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );
@@ -87,6 +87,7 @@ define('ALLOW_UNFILTERED_UPLOADS', true);
 /* Это всё, дальше не редактируем. Успехов! */
 
 /** Абсолютный путь к директории WordPress. */
+define( 'DUPLICATOR_AUTH_KEY', 'TF}KK;tT;`5+DQc5@]sLwG)&O_uUA:YCfNYdBH2L*@mQ+xA?*5h-[d=vKAKx}$v^' );
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
